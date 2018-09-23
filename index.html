@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style>
+        .tuna {
+            background: url('./images/cat.png') 0 0 no-repeat;
+            position: fixed;
+            right: 0;
+            bottom: 100px;
+            left: 0;
+            margin: auto;
+            width: 398.666666667px;
+            height: 200px;
+            animation: walk 1s steps(12) infinite;
+        }
+
+        @keyframes walk {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 0 -2400px;
+            }
+        }
+    </style>
+<style>
+.dog {
+    background: url('./images/cat.png') 0 0 no-repeat;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    left: 200;
+    margin: auto;
+    width: 398.666666667px;
+    height: 200px;
+    animation: walk 1s steps(12) infinite;
+}
+
+@keyframes walk {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -2400px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <div class="tuna"></div>
+    <div class="background"></div>
+    <div class="dog"></div>
+
+    <style>
+        .background {
+            background: url('./images/background.png') 0 0 repeat-x;
+            height: 100vh;
+            background-size: 2100px 100%; 
+            background-position: 0px 0px;
+           background-repeat: repeat-x;
+           animation: body 20s linear infinite;
+        }
+
+        @keyframes body {
+            from {
+                background-position: 100% 0;
+            }
+            to {
+                background-position: -100% 0;
+            }
+        }
+    </style>
+    
+</body>
+
+</html>

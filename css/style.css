@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    background: url('./images/background.png') 0 0 repeat-x;
+    width: 100vw;
+    height: 100vh;
+    background-size: 5100px 100%; 
+    animation: galaxy 20s linear infinite;
+  }
